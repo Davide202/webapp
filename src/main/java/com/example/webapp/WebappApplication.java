@@ -17,16 +17,6 @@ public class WebappApplication {
 
 
 	}
-	@org.springframework.web.bind.annotation.RestController
-	@RequestMapping("/")
-	public static class RestController{
-		@Value("${environment.variable.one}")
-		String varOne;
-		@GetMapping
-		public ResponseEntity get(){
-			return ResponseEntity.ok(varOne);
-		}
 
-	}
 
 }
